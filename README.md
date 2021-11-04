@@ -1,1 +1,1 @@
-# exe
+# QuasiRegularPattern
