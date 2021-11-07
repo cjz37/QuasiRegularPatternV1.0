@@ -74,7 +74,7 @@ def action():
     global img
     img = Image.open('images/temp.png')
     photo = ImageTk.PhotoImage(img)
-    imgLabel = Label(img_area, image=photo)
+    imgLabel = Label(img_area, image=photo, width=600, height=600)
     imgLabel.grid(row=0, column=0)
     # t = threading.Thread(target=im.draw(q, s, w, xmin, ymin))  # 使用线程显示图片，不干扰滑块的调整
     # t.start()
@@ -127,8 +127,8 @@ frm.pack()
 
 # 左侧区域
 img_area = Frame(frm, width=700, height=600)
-qrp_img = PhotoImage(file="images/temp.png")
-imgLabel = Label(img_area, image=qrp_img)
+qrp_img = PhotoImage(file="images/clear.png")
+imgLabel = Label(img_area, image=qrp_img, width=600, height=600)
 imgLabel.grid(row=0, column=0)
 img_area.pack(side=LEFT)
 
